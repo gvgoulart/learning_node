@@ -13,6 +13,11 @@ const Sequelize = require('sequelize');
             host: "localhost",
             dialect: "mysql"
         });
+// Rotas
+
+        app.get('/cad', function(req, res){
+            res.render('formulario')
+        });
 
 
 app.listen(8081, function() {
