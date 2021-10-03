@@ -19,6 +19,9 @@ const Sequelize = require('sequelize');
             res.render('formulario')
         });
 
+        app.post('/add', function(req, res){
+            res.send('FORMULÁRIO RECEBIDO')
+        });
 
 app.listen(8081, function() {
     console.log("servidor rodando na url tanto faz");
